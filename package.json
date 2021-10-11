@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --emptyOutDir",
-    "postbuild": "node service-worker/build.js",
+    "postbuild": "node service-worker/build.js && cp CNAME build/CNAME",
     "serve": "vite preview"
   },
   "license": "MIT",
